@@ -3,156 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disrupsi Teknologi: Flashdisk vs Cloud File</title>
+  <title>Transformasi Digital: Flashdisk ke Cloud</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #333;
-      --card: #f7f9fa;
-      --hover: #f1f1f1;
-    }
-    body.dark {
-      --bg: #1e1e1e;
-      --text: #f0f0f0;
-      --card: #2c2c2c;
-      --hover: #333;
+    * {
+      scroll-behavior: smooth;
     }
     body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f8ff;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      transition: all 0.3s ease;
+      padding: 0;
+      color: #003366;
     }
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 40px 20px;
-      background-color: var(--card);
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      transition: background 0.3s ease;
-    }
-    h1 {
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
       text-align: center;
-      color: var(--text);
-      margin-bottom: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    h2 {
-      color: var(--text);
-      margin-top: 40px;
+    h1, h2, h3 {
+      color: #003366;
     }
-    p {
-      font-size: 1.05rem;
+    .section {
+      background: white;
+      padding: 30px 20px;
+      margin: 40px auto;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-in-out;
+    }
+    .section.show {
+      opacity: 1;
+      transform: translateY(0);
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
     }
     th, td {
-      padding: 14px 12px;
+      padding: 12px;
       text-align: left;
-      border-bottom: 1px solid #ccc;
     }
     th {
-      background-color: #ddd;
+      background-color: #e6f2ff;
     }
-    tr:hover {
-      background-color: var(--hover);
+    ul, ol {
+      margin-top: 10px;
+      padding-left: 20px;
     }
-    tr.active {
-      background-color: #d1ecf1 !important;
+    blockquote {
+      border-left: 5px solid #007bff;
+      padding-left: 15px;
+      color: #555;
+      font-style: italic;
     }
-    .toggle-btn {
-      display: block;
-      margin: 0 auto 30px;
-      padding: 10px 20px;
-      background-color: #444;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-    .toggle-btn:hover {
-      background-color: #666;
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Transformasi Digital: Dari Flashdisk ke Penyimpanan Awan</h1>
+  </header>
 
-  <div class="container">
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <div class="section"><h2>1. Latar Belakang Transformasi Digital</h2><p>Transformasi digital adalah proses integrasi teknologi digital ke dalam semua aspek operasional untuk meningkatkan efisiensi dan efektivitas kerja.</p></div>
 
-    <h1>Disrupsi Teknologi: Dari Flashdisk ke Cloud File</h1>
+  <div class="section"><h2>2. Perbandingan Flashdisk vs Cloud</h2><table><tr><th>Aspek</th><th>Flashdisk</th><th>Cloud Storage</th></tr><tr><td>Bentuk</td><td>Fisik, portabel</td><td>Virtual, berbasis internet</td></tr><tr><td>Aksesibilitas</td><td>Terbatas</td><td>Dari mana saja</td></tr><tr><td>Keamanan</td><td>Rawan hilang/rusak</td><td>Enkripsi & backup</td></tr><tr><td>Kolaborasi</td><td>Tidak mendukung</td><td>Real-time</td></tr><tr><td>Kapasitas</td><td>Terbatas</td><td>Fleksibel</td></tr></table></div>
 
-    <section>
-      <h2>Latar Belakang</h2>
-      <p>
-        Dalam era digital, kebutuhan akan efisiensi dan aksesibilitas data telah mendorong transformasi signifikan dari media penyimpanan fisik ke digital. Flashdisk pernah menjadi alat utama untuk menyimpan dan memindahkan file, namun keterbatasannya mulai tergantikan oleh teknologi cloud. Cloud file memungkinkan pengguna menyimpan data secara daring, mengaksesnya kapan saja, dan bekerja secara kolaboratif tanpa batasan perangkat keras.
-      </p>
-    </section>
+  <div class="section"><h2>3. Alasan Beralih ke Cloud</h2><ul><li>🌍 Akses global</li><li>🤝 Kolaborasi efisien</li><li>🧠 Otomatisasi</li><li>🛡️ Keamanan lebih baik</li><li>♻️ Efisiensi biaya</li></ul></div>
 
-    <section>
-      <h2>Perbandingan Flashdisk vs Cloud File</h2>
-      <table id="comparisonTable">
-        <thead>
-          <tr>
-            <th>Kriteria</th>
-            <th>Flashdisk</th>
-            <th>Cloud File</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Aksesibilitas</td>
-            <td>Harus terhubung ke perangkat</td>
-            <td>Dapat diakses dari mana saja</td>
-          </tr>
-          <tr>
-            <td>Risiko Kehilangan</td>
-            <td>Mudah hilang atau rusak fisik</td>
-            <td>Data aman di server cloud</td>
-          </tr>
-          <tr>
-            <td>Kapasitas</td>
-            <td>Terbatas sesuai ukuran fisik</td>
-            <td>Bisa diperbesar sesuai kebutuhan</td>
-          </tr>
-          <tr>
-            <td>Kecepatan Transfer</td>
-            <td>Tergantung port USB</td>
-            <td>Tergantung internet</td>
-          </tr>
-          <tr>
-            <td>Biaya</td>
-            <td>Pembayaran satu kali</td>
-            <td>Gratis terbatas / berlangganan</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </div>
+  <div class="section"><h2>4. Platform Penyimpanan Awan Populer</h2><table><tr><th>Layanan</th><th>Kelebihan</th><th>Kapasitas Gratis</th></tr><tr><td>Google Drive</td><td>Terintegrasi dengan Gmail</td><td>15 GB</td></tr><tr><td>Dropbox</td><td>Sinkronisasi cepat</td><td>2 GB</td></tr><tr><td>OneDrive</td><td>Terintegrasi Microsoft Office</td><td>5 GB</td></tr><tr><td>iCloud</td><td>Optimal untuk Apple</td><td>5 GB</td></tr><tr><td>Mega</td><td>Keamanan tinggi</td><td>20 GB</td></tr></table></div>
+
+  <div class="section"><h2>5. Langkah Migrasi ke Cloud</h2><ol><li>Backup data flashdisk</li><li>Pilih platform cloud</li><li>Upload file ke cloud</li><li>Atur folder dan akses</li><li>Lakukan pelatihan penggunaan</li></ol></div>
+
+  <div class="section"><h2>6. Keamanan Cloud</h2><p>Potensi risiko: hacker, kehilangan data, koneksi internet.</p><p>Solusi:</p><ul><li>Gunakan 2FA</li><li>Password kuat</li><li>Atur izin akses</li><li>Backup tambahan</li></ul></div>
+
+  <div class="section"><h2>7. Tantangan & Solusi</h2><table><tr><th>Tantangan</th><th>Solusi</th></tr><tr><td>Internet tidak stabil</td><td>Gunakan akses offline</td></tr><tr><td>Penolakan pengguna</td><td>Lakukan pelatihan</td></tr><tr><td>Adaptasi teknologi baru</td><td>Beri panduan bertahap</td></tr></table></div>
+
+  <div class="section"><h2>8. Penutup</h2><p>Transformasi ke cloud bukan hanya soal alat, tapi perubahan budaya kerja menjadi lebih efisien dan fleksibel.</p><blockquote>“Bukan soal siapa yang paling canggih, tapi siapa yang paling siap beradaptasi.”</blockquote></div>
+
+  <footer>
+    &copy; 2025 Transformasi Digital | Flashdisk ke Cloud
+  </footer>
 
   <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark");
-    }
-
-    // Tambahkan event click ke baris tabel
-    document.addEventListener("DOMContentLoaded", () => {
-      const rows = document.querySelectorAll("#comparisonTable tbody tr");
-      rows.forEach(row => {
-        row.addEventListener("click", () => {
-          rows.forEach(r => r.classList.remove("active"));
-          row.classList.add("active");
-        });
+    const sections = document.querySelectorAll('.section');
+    const showSection = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          section.classList.add('show');
+        } else {
+          section.classList.remove('show');
+        }
       });
-    });
+    };
+    window.addEventListener('scroll', showSection);
+    window.addEventListener('load', showSection);
   </script>
-
 </body>
 </html>
