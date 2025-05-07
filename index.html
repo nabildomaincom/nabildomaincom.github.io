@@ -1,209 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Disrupsi Teknologi: Hard File ke Cloud</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disrupsi Teknologi: Flashdisk vs Cloud File</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+    :root {
+      --bg: #ffffff;
+      --text: #333;
+      --card: #f7f9fa;
+      --hover: #f1f1f1;
+    }
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --card: #2c2c2c;
+      --hover: #333;
     }
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: white;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: all 0.3s ease;
     }
-    header {
-      background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-      padding: 100px 20px;
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px 20px;
+      background-color: var(--card);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      transition: background 0.3s ease;
+    }
+    h1 {
       text-align: center;
-      color: white;
-      box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
-    }
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #111;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00c3ff;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.7s ease-out;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
+      color: var(--text);
+      margin-bottom: 30px;
     }
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #00c3ff;
+      color: var(--text);
+      margin-top: 40px;
+    }
+    p {
+      font-size: 1.05rem;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 15px;
-      background-color: white;
-      color: black;
-    }
-    th, td {
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
-    blockquote {
-      border-left: 5px solid #00c3ff;
-      padding-left: 15px;
-      font-style: italic;
       margin-top: 20px;
     }
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      margin-top: 60px;
+    th, td {
+      padding: 14px 12px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background-color: #ddd;
+    }
+    tr:hover {
+      background-color: var(--hover);
+    }
+    tr.active {
+      background-color: #d1ecf1 !important;
+    }
+    .toggle-btn {
+      display: block;
+      margin: 0 auto 30px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .toggle-btn:hover {
+      background-color: #666;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Disrupsi Teknologi</h1>
-    <p>Dari Hard File ke Cloud File</p>
-  </header>
 
-  <nav>
-    <a href="#pendahuluan">Pendahuluan</a>
-    <a href="#perbandingan">Perbandingan</a>
-    <a href="#tantangan">Tantangan</a>
-    <a href="#solusi">Solusi</a>
-    <a href="#studi">Studi Kasus</a>
-    <a href="#masa-depan">Masa Depan</a>
-    <a href="#kesimpulan">Kesimpulan</a>
-  </nav>
+  <div class="container">
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-  <section id="pendahuluan">
-    <h2>1. Pendahuluan</h2>
-    <p>Disrupsi teknologi adalah perubahan signifikan terhadap sistem tradisional melalui inovasi. Contohnya, pergeseran dari dokumen fisik ke penyimpanan berbasis cloud yang memudahkan akses dan kolaborasi digital.</p>
-  </section>
+    <h1>Disrupsi Teknologi: Dari Flashdisk ke Cloud File</h1>
 
-  <section>
-    <h2>2. Hard File vs Cloud File</h2>
-    <p><strong>Hard File:</strong> Dokumen kertas yang memerlukan ruang fisik dan rentan rusak.<br>
-    <strong>Cloud File:</strong> Dokumen digital yang tersimpan online dan mudah diakses kapan saja.</p>
-  </section>
+    <section>
+      <h2>Latar Belakang</h2>
+      <p>
+        Dalam era digital, kebutuhan akan efisiensi dan aksesibilitas data telah mendorong transformasi signifikan dari media penyimpanan fisik ke digital. Flashdisk pernah menjadi alat utama untuk menyimpan dan memindahkan file, namun keterbatasannya mulai tergantikan oleh teknologi cloud. Cloud file memungkinkan pengguna menyimpan data secara daring, mengaksesnya kapan saja, dan bekerja secara kolaboratif tanpa batasan perangkat keras.
+      </p>
+    </section>
 
-  <section>
-    <h2>3. Faktor Pendorong Disrupsi</h2>
-    <ul>
-      <li>Digitalisasi dan otomatisasi</li>
-      <li>Mobilitas dan akses lintas perangkat</li>
-      <li>Keamanan data dan backup otomatis</li>
-      <li>Kolaborasi real-time</li>
-      <li>Efisiensi ruang dan biaya</li>
-    </ul>
-  </section>
-
-  <section id="perbandingan">
-    <h2>4. Perbandingan Hard File vs Cloud File</h2>
-    <table>
-      <tr><th>Aspek</th><th>Hard File</th><th>Cloud File</th></tr>
-      <tr><td>Aksesibilitas</td><td>Terbatas (fisik)</td><td>Online, fleksibel</td></tr>
-      <tr><td>Keamanan</td><td>Rentan rusak</td><td>Backup & Enkripsi</td></tr>
-      <tr><td>Kolaborasi</td><td>Tidak didukung</td><td>Real-time</td></tr>
-      <tr><td>Efisiensi Ruang</td><td>Butuh ruang fisik</td><td>Hemat tempat</td></tr>
-      <tr><td>Biaya</td><td>Tinggi</td><td>Efisien</td></tr>
-    </table>
-  </section>
-
-  <section id="tantangan">
-    <h2>5. Tantangan Migrasi</h2>
-    <ul>
-      <li>Ketergantungan pada internet</li>
-      <li>Kurangnya pemahaman teknologi</li>
-      <li>Isu privasi dan keamanan</li>
-      <li>Perubahan budaya kerja</li>
-    </ul>
-  </section>
-
-  <section id="solusi">
-    <h2>6. Solusi dan Strategi</h2>
-    <ul>
-      <li>Pendidikan digital</li>
-      <li>Pilih layanan cloud terpercaya</li>
-      <li>Backup dan enkripsi data</li>
-      <li>Migrasi bertahap dengan sistem hybrid</li>
-    </ul>
-  </section>
-
-  <section id="studi">
-    <h2>7. Studi Kasus</h2>
-    <p><strong>Sekolah Digital:</strong> Menghemat biaya cetak dan dokumentasi melalui Google Workspace.<br>
-    <strong>Kantor Pemerintah:</strong> OneDrive meningkatkan efisiensi 40% dalam pengolahan surat dan data.</p>
-  </section>
-
-  <section id="masa-depan">
-    <h2>8. Masa Depan Cloud</h2>
-    <ul>
-      <li>Integrasi AI</li>
-      <li>Penyimpanan hybrid</li>
-      <li>Blockchain untuk keamanan</li>
-      <li>Penyimpanan kuantum</li>
-    </ul>
-  </section>
-
-  <section id="kesimpulan">
-    <h2>9. Kesimpulan</h2>
-    <p>Cloud file menghadirkan efisiensi, fleksibilitas, dan keamanan. Untuk mengadopsi sepenuhnya, dibutuhkan kesiapan teknologi dan sumber daya manusia.</p>
-    <blockquote>"Bukan yang terkuat yang bertahan, tapi yang paling adaptif terhadap perubahan."</blockquote>
-  </section>
-
-  <footer>
-    &copy; 2025 Disrupsi Teknologi | Cloud Transformation
-  </footer>
+    <section>
+      <h2>Perbandingan Flashdisk vs Cloud File</h2>
+      <table id="comparisonTable">
+        <thead>
+          <tr>
+            <th>Kriteria</th>
+            <th>Flashdisk</th>
+            <th>Cloud File</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aksesibilitas</td>
+            <td>Harus terhubung ke perangkat</td>
+            <td>Dapat diakses dari mana saja</td>
+          </tr>
+          <tr>
+            <td>Risiko Kehilangan</td>
+            <td>Mudah hilang atau rusak fisik</td>
+            <td>Data aman di server cloud</td>
+          </tr>
+          <tr>
+            <td>Kapasitas</td>
+            <td>Terbatas sesuai ukuran fisik</td>
+            <td>Bisa diperbesar sesuai kebutuhan</td>
+          </tr>
+          <tr>
+            <td>Kecepatan Transfer</td>
+            <td>Tergantung port USB</td>
+            <td>Tergantung internet</td>
+          </tr>
+          <tr>
+            <td>Biaya</td>
+            <td>Pembayaran satu kali</td>
+            <td>Gratis terbatas / berlangganan</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
 
   <script>
-    const sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-      const trigger = window.innerHeight * 0.8;
-      sections.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-        if (top < trigger) {
-          section.classList.add('visible');
-        }
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    // Tambahkan event click ke baris tabel
+    document.addEventListener("DOMContentLoaded", () => {
+      const rows = document.querySelectorAll("#comparisonTable tbody tr");
+      rows.forEach(row => {
+        row.addEventListener("click", () => {
+          rows.forEach(r => r.classList.remove("active"));
+          row.classList.add("active");
+        });
       });
     });
   </script>
+
 </body>
 </html>
