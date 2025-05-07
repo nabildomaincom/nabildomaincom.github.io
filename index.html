@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transformasi Digital: Flashdisk ke Cloud</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       scroll-behavior: smooth;
+      box-sizing: border-box;
     }
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f0f8ff;
+      background: linear-gradient(to right, #e3f2fd, #f0f8ff);
       margin: 0;
       padding: 0;
       color: #003366;
     }
     header {
-      background-color: #007bff;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    h1, h2, h3 {
+    h1, h2 {
+      margin: 0 0 10px;
+    }
+    h2 {
       color: #003366;
     }
     .section {
       background: white;
-      padding: 30px 20px;
+      padding: 30px 25px;
       margin: 40px auto;
       max-width: 900px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
       opacity: 0;
       transform: translateY(50px);
       transition: all 0.8s ease-in-out;
@@ -67,13 +72,15 @@
       padding-left: 15px;
       color: #555;
       font-style: italic;
+      margin-top: 20px;
     }
     footer {
-      background: #007bff;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 60px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -82,21 +89,118 @@
     <h1>Transformasi Digital: Dari Flashdisk ke Penyimpanan Awan</h1>
   </header>
 
-  <div class="section"><h2>1. Latar Belakang Transformasi Digital</h2><p>Transformasi digital adalah proses integrasi teknologi digital ke dalam semua aspek operasional untuk meningkatkan efisiensi dan efektivitas kerja.</p></div>
+  <div class="section">
+    <h2>0. Pengertian Cloud Storage</h2>
+    <p>
+      Cloud Storage adalah layanan penyimpanan data digital yang dilakukan secara online di server-server internet. 
+      Pengguna dapat menyimpan, mengakses, dan membagikan data melalui jaringan internet tanpa perlu perangkat fisik.
+    </p>
+  </div>
 
-  <div class="section"><h2>2. Perbandingan Flashdisk vs Cloud</h2><table><tr><th>Aspek</th><th>Flashdisk</th><th>Cloud Storage</th></tr><tr><td>Bentuk</td><td>Fisik, portabel</td><td>Virtual, berbasis internet</td></tr><tr><td>Aksesibilitas</td><td>Terbatas</td><td>Dari mana saja</td></tr><tr><td>Keamanan</td><td>Rawan hilang/rusak</td><td>Enkripsi & backup</td></tr><tr><td>Kolaborasi</td><td>Tidak mendukung</td><td>Real-time</td></tr><tr><td>Kapasitas</td><td>Terbatas</td><td>Fleksibel</td></tr></table></div>
+  <div class="section">
+    <h2>1. Latar Belakang Transformasi Digital</h2>
+    <p>Transformasi digital adalah proses integrasi teknologi digital ke dalam semua aspek operasional untuk meningkatkan efisiensi dan efektivitas kerja.</p>
+  </div>
 
-  <div class="section"><h2>3. Alasan Beralih ke Cloud</h2><ul><li>🌍 Akses global</li><li>🤝 Kolaborasi efisien</li><li>🧠 Otomatisasi</li><li>🛡️ Keamanan lebih baik</li><li>♻️ Efisiensi biaya</li></ul></div>
+  <div class="section">
+    <h2>2. Perbandingan Flashdisk vs Cloud</h2>
+    <table>
+      <tr><th>Aspek</th><th>Flashdisk</th><th>Cloud Storage</th></tr>
+      <tr><td>Bentuk</td><td>Fisik, portabel</td><td>Virtual, berbasis internet</td></tr>
+      <tr><td>Aksesibilitas</td><td>Terbatas</td><td>Dari mana saja</td></tr>
+      <tr><td>Keamanan</td><td>Rawan hilang/rusak</td><td>Enkripsi & backup</td></tr>
+      <tr><td>Kolaborasi</td><td>Tidak mendukung</td><td>Real-time</td></tr>
+      <tr><td>Kapasitas</td><td>Terbatas</td><td>Fleksibel</td></tr>
+    </table>
+  </div>
 
-  <div class="section"><h2>4. Platform Penyimpanan Awan Populer</h2><table><tr><th>Layanan</th><th>Kelebihan</th><th>Kapasitas Gratis</th></tr><tr><td>Google Drive</td><td>Terintegrasi dengan Gmail</td><td>15 GB</td></tr><tr><td>Dropbox</td><td>Sinkronisasi cepat</td><td>2 GB</td></tr><tr><td>OneDrive</td><td>Terintegrasi Microsoft Office</td><td>5 GB</td></tr><tr><td>iCloud</td><td>Optimal untuk Apple</td><td>5 GB</td></tr><tr><td>Mega</td><td>Keamanan tinggi</td><td>20 GB</td></tr></table></div>
+  <div class="section">
+    <h2>3. Alasan Beralih ke Cloud</h2>
+    <ul>
+      <li>🌍 Akses global</li>
+      <li>🤝 Kolaborasi efisien</li>
+      <li>🧠 Otomatisasi</li>
+      <li>🛡️ Keamanan lebih baik</li>
+      <li>♻️ Efisiensi biaya</li>
+    </ul>
+  </div>
 
-  <div class="section"><h2>5. Langkah Migrasi ke Cloud</h2><ol><li>Backup data flashdisk</li><li>Pilih platform cloud</li><li>Upload file ke cloud</li><li>Atur folder dan akses</li><li>Lakukan pelatihan penggunaan</li></ol></div>
+  <div class="section">
+    <h2>4. Platform Penyimpanan Awan Populer</h2>
+    <table>
+      <tr><th>Layanan</th><th>Kelebihan</th><th>Kapasitas Gratis</th></tr>
+      <tr><td>Google Drive</td><td>Terintegrasi dengan Gmail</td><td>15 GB</td></tr>
+      <tr><td>Dropbox</td><td>Sinkronisasi cepat</td><td>2 GB</td></tr>
+      <tr><td>OneDrive</td><td>Terintegrasi Microsoft Office</td><td>5 GB</td></tr>
+      <tr><td>iCloud</td><td>Optimal untuk Apple</td><td>5 GB</td></tr>
+      <tr><td>Mega</td><td>Keamanan tinggi</td><td>20 GB</td></tr>
+    </table>
+  </div>
 
-  <div class="section"><h2>6. Keamanan Cloud</h2><p>Potensi risiko: hacker, kehilangan data, koneksi internet.</p><p>Solusi:</p><ul><li>Gunakan 2FA</li><li>Password kuat</li><li>Atur izin akses</li><li>Backup tambahan</li></ul></div>
+  <div class="section">
+    <h2>4.1 Jenis-Jenis Cloud Storage</h2>
+    <table>
+      <tr>
+        <th>Jenis</th>
+        <th>Deskripsi</th>
+        <th>Contoh</th>
+      </tr>
+      <tr>
+        <td>Public Cloud</td>
+        <td>Layanan umum yang dapat diakses publik</td>
+        <td>Google Drive, Dropbox, Terabox</td>
+      </tr>
+      <tr>
+        <td>Private Cloud</td>
+        <td>Digunakan secara eksklusif oleh organisasi</td>
+        <td>Server internal perusahaan</td>
+      </tr>
+      <tr>
+        <td>Hybrid Cloud</td>
+        <td>Kombinasi antara public dan private cloud</td>
+        <td>Integrasi internal dan eksternal</td>
+      </tr>
+    </table>
+  </div>
 
-  <div class="section"><h2>7. Tantangan & Solusi</h2><table><tr><th>Tantangan</th><th>Solusi</th></tr><tr><td>Internet tidak stabil</td><td>Gunakan akses offline</td></tr><tr><td>Penolakan pengguna</td><td>Lakukan pelatihan</td></tr><tr><td>Adaptasi teknologi baru</td><td>Beri panduan bertahap</td></tr></table></div>
+  <div class="section">
+    <h2>5. Langkah Migrasi ke Cloud</h2>
+    <ol>
+      <li>Backup data flashdisk</li>
+      <li>Pilih platform cloud</li>
+      <li>Upload file ke cloud</li>
+      <li>Atur folder dan akses</li>
+      <li>Lakukan pelatihan penggunaan</li>
+    </ol>
+  </div>
 
-  <div class="section"><h2>8. Penutup</h2><p>Transformasi ke cloud bukan hanya soal alat, tapi perubahan budaya kerja menjadi lebih efisien dan fleksibel.</p><blockquote>“Bukan soal siapa yang paling canggih, tapi siapa yang paling siap beradaptasi.”</blockquote></div>
+  <div class="section">
+    <h2>6. Keamanan Cloud</h2>
+    <p>Potensi risiko: hacker, kehilangan data, koneksi internet.</p>
+    <p>Solusi:</p>
+    <ul>
+      <li>Gunakan 2FA</li>
+      <li>Password kuat</li>
+      <li>Atur izin akses</li>
+      <li>Backup tambahan</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>7. Tantangan & Solusi</h2>
+    <table>
+      <tr><th>Tantangan</th><th>Solusi</th></tr>
+      <tr><td>Internet tidak stabil</td><td>Gunakan akses offline</td></tr>
+      <tr><td>Penolakan pengguna</td><td>Lakukan pelatihan</td></tr>
+      <tr><td>Adaptasi teknologi baru</td><td>Beri panduan bertahap</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>8. Penutup</h2>
+    <p>Transformasi ke cloud bukan hanya soal alat, tapi perubahan budaya kerja menjadi lebih efisien dan fleksibel.</p>
+    <blockquote>“Bukan soal siapa yang paling canggih, tapi siapa yang paling siap beradaptasi.”</blockquote>
+  </div>
 
   <footer>
     &copy; 2025 Transformasi Digital | Flashdisk ke Cloud
